@@ -14,7 +14,7 @@
               </label>
               <div class="mt-3">
                 <input v-model="formPost.title" type="text" id="name" name="name" placeholder="Վերնագիր" 
-               class="flex-1 py-2 border-b-[1px] border-gray-300 focus:border-[#0b5be0] 
+               class="flex-1 py-2 border-b-[1px] border-gray-300 focus:border-[#4ab749] 
                       text-black  font-semibold  w-full  placeholder-gray-300 dark:placeholder-slate-300 dark:bg-slate-800  dark:text-white shadow-sm
                       outline-none">
               </div>
@@ -39,7 +39,7 @@
                 Թեմաներ
               </label>
               <div class="mt-3">
-                <select v-model="formPost.type" class=" dark:text-slate-300 dark:bg-slate-800 bg-transparent relative z-[2] appearance-none cursor-pointer block w-full pl-3 pr-[44px] py-[9px] text-base rounded  border border-solid transition-all border-gray-300 focus:text-gray-700 focus:bg-transparent link focus:border-blue-600 focus:outline-none">
+                <select v-model="formPost.type" class=" dark:text-slate-300 dark:bg-slate-800 bg-transparent relative z-[2] appearance-none cursor-pointer block w-full pl-3 pr-[44px] py-[9px] text-base rounded  border border-solid transition-all border-gray-300 focus:text-gray-700 focus:bg-transparent link focus:border-[#4ab749] focus:outline-none">
                         <option value="Algorithms" class="link">Algorithms</option>
                         <option value="Web development" class="link">Web Development</option>
                         <option value="Game development" class="link">Game Development</option> 
@@ -75,7 +75,7 @@
                     <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <div class="flex text-sm text-gray-600 justify-center">
-                    <label for="file-upload" class="relative cursor-pointer flex flex-col bg-white dark:bg-slate-800 rounded-md font-medium text-[#0b5be0] hover:text-[#0b5be0] focus-within:outline-none ">
+                    <label for="file-upload" class="relative cursor-pointer flex flex-col bg-white dark:bg-slate-800 rounded-md font-medium text-[#4ab749] hover:text-[#4ab749] focus-within:outline-none ">
                       <span class="mb-4" >Պատկերի հղում</span>
                       <input class=" bg-gray-50 border  text-gray-500 text-sm border-gray-300 text-center py-1   block w-full rounded-md sm:text-sm  focus-within:outline-none" placeholder=":https//" v-model="formPost.coverURL" name="file-upload" type="text">
                     </label>
@@ -99,12 +99,12 @@
         <div>
         <div class='editor-button-block flex flex-col  px-[34px] py-[22px] bg-white dark:bg-slate-800 rounded-[13px]'>
             <button class=" w-full justify-center font-[700]  text-[#627070] rounded py-2 px-10 link mb-6 dark:text-slate-300 hover:opacity-75 transition-all flex"><img class="mr-2" src="../Images/icons/save.svg" alt=""> Պահպանել</button>
-            <button @click="createPost"  class=" w-full bg-[#0b5be0] text-white rounded py-2 px-10 link  dark:hover:text-black dark:hover:bg-white  hover:bg-black transition-all">Հրապարակել</button>
+            <button @click="createPost"  class=" w-full bg-[#4ab749] text-white rounded py-2 px-10 link  dark:hover:text-black dark:hover:bg-white  hover:bg-black transition-all">Հրապարակել</button>
         </div>
         <div class='sidebar mt-4  flex flex-col items-center'>
-            <a href="#" class="text-center  text-[#0b5be0] text-[18px] link dark:hover:text-white hover:text-[black] transition-all" >Հրապարակման <br> Կանոններ</a>
+            <a href="#" class="text-center  text-[#4ab749] text-[18px] link dark:hover:text-white hover:text-[black] transition-all" >Հրապարակման <br> Կանոններ</a>
             <p class='text-[#627070] dark:text-slate-300 px-[10px] mt-3'>
-                Չմոռանաք պահպանել <br> ձեր գրառումը։ <br> Բոլոր պահպանված սևագրերը կարելի է գտնել ձեր հաշվի <router-link to="/posts" class="text-[#0b5be0]" >«Իմ գրառումները»</router-link> <br> բաժնում
+                Չմոռանաք պահպանել <br> ձեր գրառումը։ <br> Բոլոր պահպանված սևագրերը կարելի է գտնել ձեր հաշվի <router-link to="/posts" class="text-[#4ab749]" >«Իմ գրառումները»</router-link> <br> բաժնում
             </p>
         </div>
         </div>

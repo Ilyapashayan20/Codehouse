@@ -80,7 +80,7 @@ export default {
         })
       } catch(e) {
         commit("setAuthError", e.message);
-        dispatch("toast/error", e.message, {root: true});
+        dispatch("toast/error", 'Էլ հասցեն արդեն գրանցված է', {root: true});
       } finally {
         commit("setAuthIsProcessing", false);
       }
@@ -93,7 +93,7 @@ export default {
         await signInWithEmailAndPassword(getAuth(),email,password)
       } catch(e){
         commit("setAuthError", e.message);
-        dispatch("toast/error", e.message, {root: true});
+        dispatch("toast/error", 'Սխալ Էլ հասցե կամ գաղտնաբառ', {root: true});
       } finally{
         commit("setAuthIsProcessing",false)
       }
