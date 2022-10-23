@@ -1,22 +1,140 @@
 <template>
     <BaseNavbar />
-<section class=" bg-transparent mt-[150px]">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center">
-            <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#4ab749]">404</h1>
-            <p class="mb-4 text-3xl tracking-tight font-bold text-[#4ab749] md:text-4xl">Something's missing.</p>
-            <p class="mb-4 text-lg font-light text-gray-500 ">Sorry, we can't find that page. You'll find lots to explore on the home page. </p>
-            <router-link to="/" class="inline-flex text-white bg-[#4ab749] hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back to Homepage</router-link>
-        </div>   
+    <div class="slide m-auto mt-28">
+        <EventSliderItem />
+        </div>
+        <div class="max-w-[90%] m-auto">
+        <div class="Upcoming-events mt-4 mb-20">
+            <h1 class="ue-title text-[20px] mb:text-[39px] font-[600] dark:text-white">Սպասվող Միջոցառումներ</h1>
+            <div class="mt-10 events-grid-block w-full">
+              <router-link to="/">
+                <div class=" max-w-[400px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
+                    <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test2.jpg" alt="">
+                        <div class=" pb-5 mb:pb-6 pt-4 px-4 flex flex-col">
+                            <h1 class="mb-[2px] text-[17px] mb:text-[25px] dark:text-white">Touchcats</h1>
+                            <p class="mb-[5px] text-[14px] mb:text-[18px] dark:text-white">The Complet Guid</p>
+                            <div class="post-date mb-[5px] flex">
+                              <img class="uei" src="../Images/icons/calendar.svg">
+                              <p class='text-[#798795] dark:text-slate-50 ml-1 uet '>Հոկտեմբերի 29</p>
+                            </div>
+                            <div class="post-date mb-[5px] flex">
+                              <img class="uei" src="../Images/icons/64-location.svg">
+                              <p class='text-[#798795] dark:text-slate-50 ml-1 uet '>Yerevam, 123 Hovsep Emin St</p>
+                            </div>
+                        </div>
+                </div>
+              </router-link>
+              <router-link to="/">
+                <div class=" max-w-[400px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
+                    <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test.jpg" alt="">
+                        <div class=" pb-5 mb:pb-8 pt-4 px-4 flex flex-col">
+                            <h1 class="mb-[2px] text-[17px] mb:text-[25px] dark:text-white">Touchcats</h1>
+                            <p class="mb-[5px] text-[14px] mb:text-[18px] dark:text-white">The Complet Guid</p>
+                            <div class="post-date mb-[5px] flex">
+                              <img class="uei" src="../Images/icons/calendar.svg">
+                              <p class='text-[#798795] dark:text-slate-50 ml-1 uet '>Հոկտեմբերի 29</p>
+                            </div>
+                            <div class="post-date mb-[5px] flex">
+                              <img class="uei" src="../Images/icons/64-location.svg">
+                              <p class='text-[#798795] dark:text-slate-50 ml-1 uet '>Yerevam, 123 Hovsep Emin St</p>
+                            </div>
+                        </div>
+                </div>
+              </router-link>
+              <router-link to="/">
+                <div class=" max-w-[400px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
+                    <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test3.jpg" alt="">
+                        <div class=" pb-5 mb:pb-8 pt-4 px-4 flex flex-col">
+                            <h1 class="mb-[2px] text-[17px] mb:text-[25px] dark:text-white">Touchcats</h1>
+                            <p class="mb-[5px] text-[14px] mb:text-[18px] dark:text-white">The Complet Guid</p>
+                            <div class="post-date mb-[5px] flex">
+                              <img class="uei" src="../Images/icons/calendar.svg">
+                              <p class='text-[#798795] dark:text-slate-50 ml-1 uet '>Հոկտեմբերի 29</p>
+                            </div>
+                            <div class="post-date mb-[5px] flex">
+                              <img class="uei" src="../Images/icons/64-location.svg">
+                              <p class='text-[#798795] dark:text-slate-50 ml-1 uet '>Yerevam, 123 Hovsep Emin St</p>
+                            </div>
+                        </div>
+                </div>
+              </router-link>
+                            <router-link to="/">
+                <div class=" max-w-[430px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
+                    <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test4.jpg" alt="">
+                        <div class=" pb-5 mb:pb-8 pt-4 px-4 flex flex-col">
+                            <h1 class="mb-[2px] text-[17px] mb:text-[25px] dark:text-white">Touchcats</h1>
+                            <p class="mb-[5px] text-[14px] mb:text-[18px] dark:text-white">The Complet Guid</p>
+                            <div class="post-date mb-[5px] flex">
+                              <img class="uei" src="../Images/icons/calendar.svg">
+                              <p class='text-[#798795] dark:text-slate-50 ml-1 uet '>Հոկտեմբերի 29</p>
+                            </div>
+                            <div class="post-date mb-[5px] flex">
+                              <img class="uei" src="../Images/icons/64-location.svg">
+                              <p class='text-[#798795] dark:text-slate-50 ml-1 uet '>Yerevam, 123 Hovsep Emin St</p>
+                            </div>
+                        </div>
+                </div>
+              </router-link>
+            </div>
+        </div>
     </div>
-</section>
+    <MainFooter class="bg-black dark:bg-slate-800" />
 </template>
 <script>
 import BaseNavbar from '@/components/BaseNavbar.vue';
+import EventSliderItem from '@/components/eventSlider-item.vue';
+import MainFooter from '@/components/mainFooter.vue';
 export default {
-    components: { BaseNavbar }
+    components: { BaseNavbar, EventSliderItem ,MainFooter}
 }
 </script>
-<style lang="">
-    
+<style lang="scss">
+.slide-text{
+ font-size: 22px;
+ @media (max-width: 1280px){
+ font-size: 18px;
+ }
+ @media (max-width: 1024px){
+  font-size: 14px;
+ }
+ @media (max-width: 600px){
+  font-size: 9px;
+ }
+
+}
+.slide{
+  max-width: 90%;
+  @media (max-width: 500px){
+    max-width: 100%;
+  }
+}
+.ue-title{
+    @media (max-width: 1160px){
+        text-align: center;
+    }
+}
+    .events-grid-block{
+        display: grid;
+        gap: 4px;
+        justify-content: center;
+        @media (min-width: 740px) {
+           grid-template-columns: repeat(2, 1fr); 
+        }   
+        @media (min-width: 1160px) {
+           grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: 1800px) {
+           grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .uet{
+        @media (max-width: 430px){
+            font-size: 12px;
+        }
+    }
+    .uei{
+        @media (max-width: 430px){
+            width: 17px;
+        }
+    }
 </style>

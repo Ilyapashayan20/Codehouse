@@ -30,7 +30,7 @@
             </div>
                 <div  class="text  mb-[13px] sm:mb-[20px] pt-[3px] sm:pt-[10px] text-[14px] dark:text-slate-300 sm:text-[17px]"><span  v-html="post.description.substring(0,250)"></span><span>........</span></div>
                 
-                <router-link :to="{name: 'PostDetail', params: {slug: post.slug}}"  class="bg-[#4ab749] mb-[15px] items-center max-w-[160px] text-[11px] px-4 py-2 sm:max-w-[206px] font-semibold sm:text-[16px]  sm:px-6 sm:py-3 flex relative rounded-[5px] text-white hover:bg-green-300 transition-all">Կարդալ ավելին <img class="ml-2 w-21px sm:max-w-full" src="../Images/icons/35-arrow-right-2.svg"></router-link>
+                <router-link @click="scrollTop()" :to="{name: 'PostDetail', params: {slug: post.slug}}"  class="bg-[#4ab749] mb-[15px] items-center max-w-[160px] text-[11px] px-4 py-2 sm:max-w-[206px] font-semibold sm:text-[16px]  sm:px-6 sm:py-3 flex relative rounded-[5px] text-white hover:bg-green-300 transition-all">Կարդալ ավելին <img class="ml-2 w-21px sm:max-w-full" src="../Images/icons/35-arrow-right-2.svg"></router-link>
             </div>
             </div>
             </div>
@@ -63,7 +63,7 @@
             </div>
             <!-- Company Block -->
             <div class="company-block  dark:bg-slate-800 dark:border-0">
-                <h1 class="title dark:text-white text-[24px]">Ընկերություններ</h1>
+                <h1 class="title dark:text-white text-[24px]">Միջոցառումներ</h1>
                 <img class='w-[36px]' src="../Images/icons/....svg">
                 <div>
                     <a class="flex hover:opacity-75 transition-all mb-4 items-center" href="/">
@@ -73,10 +73,10 @@
                             <p class="text text-[12px] dark:text-slate-300">Միջազգային ՏՏ ընկերություն</p>
                         </div>
                     </a>
-                    <a href="/" class="mt-[30px] flex items-center">
-                        <h1 class="link text-[14px] font-[600] mr-2 mb-1 dark:text-white" >Բոլոր ընկերությունները</h1>
+                    <router-link  @click="scrollTop()" to="/companies" class="mt-[30px] flex items-center">
+                        <h1 class="link text-[14px] font-[600] mr-2 mb-1 dark:text-white" >Բոլոր Միջոցառումները</h1>
                         <img src="../Images/icons/37-arrow-right-3.svg" alt="">
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -125,6 +125,12 @@ data(){
         }
     
     },
+    setup(){
+        const scrollTop = () =>{
+          window.scrollTo(0,0);
+    };
+    return{scrollTop}
+    }
     
 }
 </script>

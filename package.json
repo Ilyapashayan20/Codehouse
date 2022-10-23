@@ -23,6 +23,7 @@
     "run": "^1.4.0",
     "serve": "^14.0.1",
     "slugify": "^1.6.5",
+    "swiper": "^8.4.4",
     "vue": "^3.2.13",
     "vue-file-toolbar-menu": "^2.0.5",
     "vue-number-animation": "^1.1.2",

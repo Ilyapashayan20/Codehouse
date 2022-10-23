@@ -15,7 +15,7 @@
             </div>
             </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col w-[100%] tablet:max-w-[336px]">
         <div class="post-detail-meta-block dark:bg-slate-800 ">
             <div class="mb-3"><h1 class="text pdm-title dark:text-white ">Հեղինակ</h1></div>
             <div class="flex pb-creator bg-[#f1f1f1] dark:bg-[#171d23] w-full items-center"><img class="rounded w-14 " v-if="!postUser.avatar" src="https://bit.ly/3CvvXtJ"> <img v-else  class="rounded max-w-[56px] max-h-[54px]" :src="postUser.avatar">
@@ -75,6 +75,7 @@ export default {
         justify-content: space-between;
         @media (max-width: 950px){
             flex-direction: column;
+            
             justify-content: center;
             align-items: center;
         }

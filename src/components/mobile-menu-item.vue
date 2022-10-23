@@ -76,7 +76,7 @@ export default {
         display: block;
         width: 100%;
         height: 2px;
-        background: $blue;
+        background: $green;
     }    
     }
   .modal-animation-enter-active,
