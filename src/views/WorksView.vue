@@ -1,15 +1,66 @@
 <template>
     <BaseNavbar />
-<section class=" bg-transparent mt-[150px]">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center">
-            <h1 class="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-[#4ab749]">404</h1>
-            <p class="mb-4 text-3xl tracking-tight font-bold text-[#4ab749] md:text-4xl">Something's missing.</p>
-            <p class="mb-4 text-lg font-light text-gray-500 ">Sorry, we can't find that page. You'll find lots to explore on the home page. </p>
-            <router-link to="/" class="inline-flex text-white bg-[#4ab749] hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">Back to Homepage</router-link>
-        </div>   
+    <div class="relative min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+  <!-- Grid background -->
+  <div class="grid-background absolute inset-0 p-2 grid grid-cols-12 gap-2 transform -skew-y-12 scale-150">
+    <!-- row 1 -->
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-5 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-1 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-4 bg-gray-800 rounded animate-pulse"></div>
+    <!-- row 2 -->
+    <div class="col-span-5 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-3 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <!-- row 3 -->
+    <div class="col-span-4 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-7 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-1 bg-gray-800 rounded animate-pulse"></div>
+
+    <!-- row 4 -->
+    <div class="col-span-4 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <!-- row 5 -->
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-5 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-1 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-4 bg-gray-800 rounded animate-pulse"></div>
+
+    <!-- row 6 -->
+    <div class="col-span-4 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-7 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-1 bg-gray-800 rounded animate-pulse"></div>
+
+    <!-- row 7 -->
+    <div class="col-span-5 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-1 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-3 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-3 bg-gray-800 rounded animate-pulse"></div>
+    <!-- row 8 -->
+    <div class="col-span-2 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-5 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-1 bg-gray-800 rounded animate-pulse"></div>
+    <div class="col-span-4 bg-gray-800 rounded animate-pulse"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative">
+    <h2 class="text-white text-4xl md:text-8xl font-bold flex flex-row items-center">
+      Coming
+      <div class="relative text-sm mx-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill text-[#4ab749]" viewBox="0 0 16 16">
+          <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg>
+        <div class="absolute -top-12 transform -rotate-45 text-blue-500"><p class="font-light text-base text-white bg-[#4ab749] rounded-md px-2 py-0">super</p></div>
+      </div>
+      Soon
+    </h2>
     </div>
-</section>
+    </div>
 </template>
 <script>
 import BaseNavbar from '@/components/BaseNavbar.vue';
