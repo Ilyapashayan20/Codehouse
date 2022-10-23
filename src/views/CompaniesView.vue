@@ -8,7 +8,7 @@
             <h1 class="ue-title text-[20px] mb:text-[39px] font-[600] dark:text-white">Սպասվող Միջոցառումներ</h1>
             <div class="mt-10 events-grid-block w-full">
               <router-link to="/">
-                <div class=" max-w-[400px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
+                <div class=" max-w-[430px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
                     <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test2.jpg" alt="">
                         <div class=" pb-5 mb:pb-6 pt-4 px-4 flex flex-col">
                             <h1 class="mb-[2px] text-[17px] mb:text-[25px] dark:text-white">Touchcats</h1>
@@ -25,9 +25,9 @@
                 </div>
               </router-link>
               <router-link to="/">
-                <div class=" max-w-[400px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
-                    <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test.jpg" alt="">
-                        <div class=" pb-5 mb:pb-8 pt-4 px-4 flex flex-col">
+                <div class=" max-w-[430px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
+                    <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test4.jpg" alt="">
+                        <div class=" pb-5 mb:pb-6 pt-4 px-4 flex flex-col">
                             <h1 class="mb-[2px] text-[17px] mb:text-[25px] dark:text-white">Touchcats</h1>
                             <p class="mb-[5px] text-[14px] mb:text-[18px] dark:text-white">The Complet Guid</p>
                             <div class="post-date mb-[5px] flex">
@@ -42,9 +42,9 @@
                 </div>
               </router-link>
               <router-link to="/">
-                <div class=" max-w-[400px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
+                <div class=" max-w-[430px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
                     <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test3.jpg" alt="">
-                        <div class=" pb-5 mb:pb-8 pt-4 px-4 flex flex-col">
+                        <div class=" pb-5 mb:pb-6 pt-4 px-4 flex flex-col">
                             <h1 class="mb-[2px] text-[17px] mb:text-[25px] dark:text-white">Touchcats</h1>
                             <p class="mb-[5px] text-[14px] mb:text-[18px] dark:text-white">The Complet Guid</p>
                             <div class="post-date mb-[5px] flex">
@@ -61,7 +61,7 @@
                             <router-link to="/">
                 <div class=" max-w-[430px] max-h-[411px] hover:opacity-50 transition-all flex flex-col rounded-[18px] bg-white dark:bg-slate-800 m-3">
                     <img class="rounded-t-[18px] max-h-[210px]"  src="../Images/test/test4.jpg" alt="">
-                        <div class=" pb-5 mb:pb-8 pt-4 px-4 flex flex-col">
+                        <div class=" pb-5 mb:pb-6 pt-4 px-4 flex flex-col">
                             <h1 class="mb-[2px] text-[17px] mb:text-[25px] dark:text-white">Touchcats</h1>
                             <p class="mb-[5px] text-[14px] mb:text-[18px] dark:text-white">The Complet Guid</p>
                             <div class="post-date mb-[5px] flex">
