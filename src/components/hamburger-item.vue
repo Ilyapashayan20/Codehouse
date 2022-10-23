@@ -1,6 +1,6 @@
 <template >
     <div class="">
-        <button @click="openMenu" class=" bg-black dark:bg-[#596374] ml-3 flex rounded items-center ">
+        <button @click="openMenu" class=" bg-black dark:bg-[#596374] ml-[8px] flex rounded items-center ">
          <svg  class="ham hamRotate ham7" viewBox="0 0 100 100" width="40" >
            <path  class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
            <path class="line middle" d="m 70,50 h -40" />

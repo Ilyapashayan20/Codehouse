@@ -101,7 +101,7 @@ export default {
     transform: scale(0.8);
   }
   .create-post-mobile{
-        background-color: $blue;
+        background-color: $green;
         transition: 0.2s ease-in;
         padding-left: 13px;
         padding-right: 13px;

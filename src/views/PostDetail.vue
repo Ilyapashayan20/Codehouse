@@ -88,6 +88,7 @@ export default {
             flex-direction: column;
             @media (max-width: 950px){
                 margin-left: 0px;
+                margin-top: 20px;
                 width: 100%;
             }
             @media (max-width: 400px){
