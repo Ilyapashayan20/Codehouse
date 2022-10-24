@@ -25,7 +25,6 @@
             <SendMessageItem  />
         </div>
     </div>
-    
     </div>
 </template>
 <script>

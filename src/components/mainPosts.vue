@@ -46,7 +46,7 @@
          </div>  
         <div class="tools-block">
             <!-- Search Block -->
-            <div  class="search-block dark:bg-slate-800  dark:border-0 mt-[49px]">
+            <div  class="search-block dark:bg-slate-800  dark:border-0 mt-[31px]">
                 <h1 class="title dark:text-white text-[22px] sm:text-[24px]">Որոնում</h1>
                 <img class='w-[36px]' src="../Images/icons/....svg">
                 <div class="input flex w-full  justify-between  relative ">

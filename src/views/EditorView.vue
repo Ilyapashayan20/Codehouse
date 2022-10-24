@@ -146,9 +146,10 @@ export default {
       return{
         formPost:{
           title:{ required , },
-          description:{ required, min: minLength(300) },
+          description:{ required, min: minLength(200) },
           sitelink:{  url },
-          coverURL: { required,url }
+          coverURL: { url }
+          
         }
       }
     },

@@ -4,7 +4,7 @@
     <div  class="mainn-section  m-auto">
     <div  data-aos="zoom-in" class="post-detail-block mt-[120px] ">
         <div data-aos="fade-right"  class="post-block dark:bg-slate-800 max-w-[800px]  ">
-            <div><img class="mb-[13px]" :src="post.coverURL"></div>
+            <div><img class="mb-[13px] m-auto" :src="post.coverURL"></div>
             <div class="post-bottom-section">
             <div class="mt-[1px] pb-2 inline-block  ">
                 <h1 class='title mb-1 sm:mb-3 text-[17px] dark:text-white sm:text-[30px]'>{{post.title}}</h1>
@@ -15,7 +15,7 @@
             </div>
             </div>
         </div>
-        <div class="flex flex-col w-[100%] tablet:max-w-[336px]">
+        <div class="flex flex-col w-[100%] tablet:max-w-[410px]">
         <div class="post-detail-meta-block dark:bg-slate-800 ">
             <div class="mb-3"><h1 class="text pdm-title dark:text-white ">Հեղինակ</h1></div>
             <div class="flex pb-creator bg-[#f1f1f1] dark:bg-[#171d23] w-full items-center"><img class="rounded w-14 " v-if="!postUser.avatar" src="https://bit.ly/3CvvXtJ"> <img v-else  class="rounded max-w-[56px] max-h-[54px]" :src="postUser.avatar">
