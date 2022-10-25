@@ -6,16 +6,16 @@
            <div class="hh  bg-[#e7e7e7] dark:bg-slate-800 py-12 rounded-xl">
             <div class=" w-[90%] lg:w-[60%] m-auto flex flex-col">
                 <div class="a flex justify-start items-center">
-                    <img class="" src="../Images/Illustration/girl.svg" alt="">
-                    <h1 class="link max-w-[400px] text-xl text-white bg-[#4a5ea3] rounded-xl p-3 ">
+                    <img data-aos="fade-right"  data-aos-duration="1000" class="" src="../Images/Illustration/girl.svg" alt="">
+                    <h1 data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="700" class="link max-w-[400px] text-xl text-white bg-[#4a5ea3] rounded-xl p-3 ">
                         Դասընթացներ բաժինը հիանալի վայր է մշակման և ծրագրավորման լեզուներին ծանոթանալու համար:
                     </h1>
                 </div>
                 <div class="b flex justify-end items-center">
-                    <h1 class="link max-w-[400px] text-xl text-white bg-[#2b2f3e] rounded-xl p-3 ">
+                    <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1500" class="link max-w-[400px] text-xl text-white bg-[#2b2f3e] rounded-xl p-3 ">
                         Կարող եք նաև գտնել ավելի առաջադեմ դասընթացներ, որոնք կօգնեն ձեզ ավելին իմանալ այս թեմաների մասին:
                     </h1>
-                    <img src="../Images/Illustration/boy.svg" alt="">
+                    <img data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000" src="../Images/Illustration/boy.svg" alt="">
                 </div>
             </div>
             </div>
