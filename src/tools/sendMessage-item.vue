@@ -253,7 +253,7 @@
     <form ref="form" @submit.prevent="sendMail">
       <div>
         <span class="uppercase text-sm dark:text-white text-gray-600 font-bold">Անուն</span>
-        <input name="from_name" :value="inputFieldReset" class="w-full linkl border focus:border-[#4ab749] bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" required placeholder="">
+        <input name="form_name" :value="inputFieldReset" class="w-full linkl border focus:border-[#4ab749] bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" required placeholder="">
       </div>
       <div class="mt-6">
         <span class="uppercase text-sm dark:text-white text-gray-600 font-bold">էլ-հասցե</span>

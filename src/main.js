@@ -14,7 +14,6 @@ import VueNumber from 'vue-number-animation'
 let app;
 
 store.dispatch("user/onAuthChange",()=>{
-  
    if(!app){
       app =createApp(App)
       app.use(store)
