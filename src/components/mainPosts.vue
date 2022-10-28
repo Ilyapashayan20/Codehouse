@@ -31,7 +31,7 @@
             </div>
             </div>
         </div>
-        <div v-if="queryPosts.length === 0 && posts.length === 0 "  class="post-not_detected">
+        <div v-if="queryPosts.length === 0 && !filteredStatus"  class="post-not_detected">
             <h1 class=" pnd-title  text-center flex flex-col items-center"><img src="../Images/icons/sad-smile.svg" alt="">Ներեցեք, ձեր որոնման արդյունքները չեն գտնվել</h1>
          </div> 
         </div>
