@@ -1,15 +1,49 @@
 <template>
     <div class="mainPost-block w-full py-8">
-        <!-- <div v-for="st in  queryPosts" :key="st">
-            <h1>{{st.title}}</h1>
-            <img :src="st.coverURL" alt=""> 
-        </div> -->
-        <div v-if="posts.length>0">
+     
         <div  class="flex flex-col items-center ">
+            <div v-if="allStatus">
+            <div data-aos="fade-right"  v-for="filtredPost in queryPosts" :key="filtredPost.id"   class="post-block max-w-[800px] mt-4 dark:bg-slate-800 dark:border-0">
+            <div v-if="filtredPost.waiting" >
+            <div><img class="mb-[13px] min-h-[171px] object-cover" :src="filtredPost.coverURL"></div>
+            <div class="post-bottom-section">
+            <div class="mt-[1px] inline-block  ">
+                <h1 class='title mb-1 sm:mb-3 text-[17px] dark:text-white sm:text-[30px]'>{{ filtredPost.title }}</h1>
+                <span class="tag-link py-1 dark:bg-white" href="/">{{filtredPost.type}}</span>
+                <div class="post-block-meta mt-2 flex flex-wrap">
+                <div class="post-date mb-[5px]  mr-[9px]  flex">
+                    <img src="../Images/icons/calendar.svg">
+                    <p class='text-[#798795] dark:text-slate-50 ml-1 '>{{filtredPost.createdAt}}</p>
+                </div>
+                <div class="post-by mr-[9px] mb-[5px] flex">
+                    <img class="ml-[-2px]" src="../Images/icons/11-profile.svg">
+                    <p class='text-[#798795] dark:text-slate-50 ml-1'>{{filtredPost.creator}}</p>
+                </div>
+                <!-- <div class="post-comment mb-[5px] flex">
+                    <img src="../Images/icons/chat.svg">
+                    <p class='text-[#798795] ml-1'>{{ 0 }} Comment</p>
+                </div> -->
+            </div>
+                <div  class="text  mb-[13px] sm:mb-[20px] pt-[3px] sm:pt-[10px] text-[14px] dark:text-slate-300 sm:text-[17px]"><span  v-html="filtredPost.description.substring(0,250)"></span><span>........</span></div>
+                
+                <router-link @click="scrollTop()" :to="{name: 'PostDetail', params: {slug: filtredPost.slug}}"  class="bg-[#4ab749] mb-[15px] items-center max-w-[160px] text-[11px] px-4 py-2 sm:max-w-[206px] font-semibold sm:text-[16px]  sm:px-6 sm:py-3 flex relative rounded-[5px] text-white hover:bg-green-300 transition-all">Կարդալ ավելին <img class="ml-2 w-21px sm:max-w-full" src="../Images/icons/35-arrow-right-2.svg"></router-link>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div v-if="queryPosts.length === 0 && posts.length === 0 "  class="post-not_detected">
+            <h1 class=" pnd-title  text-center flex flex-col items-center"><img src="../Images/icons/sad-smile.svg" alt="">Ներեցեք, ձեր որոնման արդյունքները չեն գտնվել</h1>
+         </div> 
+        </div>
             <!-- Posts -->
-        <div data-aos="fade-right" v-for="post in posts" :key="post.id"   class="post-block max-w-[800px] mt-4 dark:bg-slate-800 dark:border-0">
+            <div v-if="posts.length>0">
+        <!-- <div v-if="queryPosts.length === 0" class="post-not_detected">
+            <h1 class=" pnd-title  text-center flex flex-col items-center"><img src="../Images/icons/sad-smile.svg" alt="">Ներեցեք, ձեր որոնման արդյունքները չեն գտնվել</h1>
+         </div>  -->
+        <div v-if="filteredStatus">
+        <div data-aos="fade-right"  v-for="post in posts" :key="post.id"   class="post-block max-w-[800px] mt-4 dark:bg-slate-800 dark:border-0">
             <div v-if="post.waiting" >
-            <div><img class="mb-[13px] min-h-[171px]" :src="post.coverURL"></div>
+            <div><img class="mb-[13px] min-h-[171px] object-cover" :src="post.coverURL"></div>
             <div class="post-bottom-section">
             <div class="mt-[1px] inline-block  ">
                 <h1 class='title mb-1 sm:mb-3 text-[17px] dark:text-white sm:text-[30px]'>{{ post.title }}</h1>
@@ -35,29 +69,18 @@
             </div>
             </div>
         </div>
-        <div class="flex justify-center w-full" v-if="posts.length >= lim">
-            <button @click="loadMore" class=" text rounded bg-slate-700 w-[70%] text-[12px] sm:text-[16px]  sm:w-[30%] items-center mt-5 text-white hover:bg-slate-400 transition-all  py-2 px-5">Բեռնել Ավելին</button>
+        </div>
         </div>
     </div>
         <!-- filter not detected -->
-         </div>
-         <div v-else  class="post-not_detected">
-            <h1 class=" pnd-title  text-center flex flex-col items-center"><img src="../Images/icons/sad-smile.svg" alt="">Ներեցեք, ձեր որոնման արդյունքները չեն գտնվել</h1>
-         </div>  
+          
         <div class="tools-block">
             <!-- Search Block -->
-            <div  class="search-block dark:bg-slate-800  dark:border-0 mt-[31px]">
-                <h1 class="title dark:text-white text-[22px] sm:text-[24px]">Որոնում</h1>
-                <img class='w-[36px]' src="../Images/icons/....svg">
-                <div class="input flex w-full  justify-between  relative ">
-                    <input type="text"  v-model="sText"  class=" transition-all p-[17px] w-full text-gray-900 bg-gray-100 dark:bg-[#565e6b] dark:text-slate-100  focus:outline-none focus:ring-1 focus:ring-[#4ab749]">
-                    <button @click="filterTypee" class="bg-[#4ab749]   py-[17px] px-[25px] absolute right-0"><img class="" src="../Images/icons/search.svg"></button>
-                </div>
-            </div>
-            <div   class="tag-block dark:bg-slate-800  dark:border-0  w-[350px]">
-                <h1 class="title dark:text-white text-[24px]">Filter</h1>
-                <img class='w-[36px]' src="../Images/icons/....svg">
-                <div class="flex flex-wrap">
+            <div   class="tag-block dark:bg-slate-800  dark:border-0 ">
+                <h1 class="title text-center mb:text-start dark:text-white text-[24px]">Filter</h1>
+                <img class='w-[36px] hidden mb:block' src="../Images/icons/....svg">
+                <div class="flex flex-wrap justify-center mt-3 mb:mt-0 mb:justify-start">
+                    <a @click="allPosts()" class="cursor-pointer">All</a>
                     <a v-for="filter in filtersRef" :key="filter"  @click="filterType(filter.value)" class=" dark:bg-white" href="#">{{filter.name}}</a>
                 </div>
             </div>
@@ -94,7 +117,8 @@ export default {
 data(){
    return {
     lim: 10,
-    sText:'',
+    filteredStatus:true,
+    allStatus:true,
     filtersRef:[
             { name:'Algorithms',value:'Algorithms'},
             { name:'Web Development',value:'Web Development'},
@@ -118,10 +142,15 @@ data(){
            this.lim += 10
           this.$store.dispatch("post/getPosts",this.lim)
         },
-        filterType(){
-            console.log(this.sText);
-           this.$store.dispatch("post/getQuery",this.sText)
+        filterType(val){
+           this.filteredStatus = false
+           this.allStatus = true
+           this.$store.dispatch("post/getQuery",val)
            
+        },
+        allPosts(){
+            this.filteredStatus = true
+            this.allStatus = false
         }
     
     },
@@ -164,12 +193,15 @@ data(){
     border: 1px solid #f1f1f1;
     @media (max-width: 1124px){
         width: auto;
+        margin-top: 0px;
     }
     }
     .tag-block{
     padding: 35px;
     background-color: white;
     margin-bottom: 30px;
+    width: 350px ;
+    margin-top: 24px;
     border: 1px solid #f1f1f1;
     a{
     font-size: 13px;
@@ -189,7 +221,10 @@ data(){
     }
     }
     @media (max-width: 1124px){
-        display: none;
+        width: 100%;
+    }
+    @media (max-width: 520px){
+        padding: 20px 10px;
     }
     }
     .company-block{

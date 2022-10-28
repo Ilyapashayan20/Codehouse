@@ -1,6 +1,6 @@
 <template>
     <div>
-        <QuillEditor theme="snow" />
+        <QuillEditor class=" dark:text-white" theme="snow" />
     </div>
 </template>
 <script>

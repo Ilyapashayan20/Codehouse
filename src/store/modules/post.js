@@ -37,8 +37,10 @@ export default {
             commit("setPost", post);
           },
 
-          async  getQuery({commit},queryText){
-            const serachPosts = query(collection(db,"posts"))
+          async  getQuery({commit},val){
+            const serachPosts = query(collection(db,"posts"),
+            where("type", "==", val)
+            )
             const snapshotQuery = await getDocs(serachPosts)
 
             const queryPosts = snapshotQuery.docs.map(doc =>({id: doc.id, ...doc.data()}))

@@ -2,8 +2,8 @@
   <div class="home ">
     <div class=" relative  "><BaseNavbar /></div>
     <div class="flexible  m-auto">
-    <div class=" main-section  m-auto flex justify-between">
-      <MainPosts :posts="posts" class="mt-[84px]" />
+    <div class="main-section  m-auto flex justify-between">
+      <MainPosts :posts="posts" class=" mt-[30px]  2lg:mt-[84px]" />
     </div>
     <MainFooter class="bg-black dark:bg-slate-800" />
     </div>
