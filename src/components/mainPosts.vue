@@ -71,6 +71,9 @@
         </div>
         </div>
         </div>
+        <div v-else>
+            <h1 class="text-center mt-[80px]">Loading...</h1>
+        </div>
     </div>
         <!-- filter not detected -->
           

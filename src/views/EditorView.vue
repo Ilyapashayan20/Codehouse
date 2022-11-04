@@ -28,7 +28,7 @@
               </label>
               <div class="mt-3">
                
-                <QuillEditor class="min-h-[100px]" v-model:content="formPost.description" contentType="html"   theme="snow" />
+                <QuillEditor class="min-h-[100px] dark:text-white" v-model:content="formPost.description" contentType="html"   theme="snow" />
                 <!-- <textarea  v-model="formPost.description" id="about" name="text" rows="3" class="dark:placeholder-slate-300 dark:bg-slate-800  dark:text-white shadow-sm min-h-[100px] border-b-[1px] focus-within:outline-none focus:ring-[#0b5be0] focus:border-[#0b5be0] mt-1 block w-full sm:text-sm border-gray-300 "
                  placeholder="Ձեր գրառման մասին"></textarea> -->
               </div>
