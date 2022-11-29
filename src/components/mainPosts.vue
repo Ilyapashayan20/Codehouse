@@ -62,7 +62,7 @@
                     <p class='text-[#798795] ml-1'>{{ 0 }} Comment</p>
                 </div> -->
             </div>
-                <div  class="text  mb-[13px] sm:mb-[20px] pt-[3px] sm:pt-[10px] text-[14px] dark:text-slate-300 sm:text-[17px]"><span  v-html="post.description.substring(0,250)"></span><span>........</span></div>
+                <div  class="text  mb-[13px] sm:mb-[20px] pt-[3px] sm:pt-[10px] text-[14px] dark:text-slate-300 sm:text-[17px]"><span   v-html="post.description.substring(0,250) "></span><span>........</span></div>
                 
                 <router-link @click="scrollTop()" :to="{name: 'PostDetail', params: {slug: post.slug}}"  class="bg-[#4ab749] mb-[15px] items-center max-w-[160px] text-[11px] px-4 py-2 sm:max-w-[206px] font-semibold sm:text-[16px]  sm:px-6 sm:py-3 flex relative rounded-[5px] text-white hover:bg-green-300 transition-all">Կարդալ ավելին <img class="ml-2 w-21px sm:max-w-full" src="../Images/icons/35-arrow-right-2.svg"></router-link>
             </div>
